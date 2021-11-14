@@ -31,7 +31,7 @@
         &kp EXCL       &kp AT         &kp HASH       &kp DLLR        &kp PRCNT            &kp HASH       &kp N7          &kp N8          &kp N9          &kp P 
         &kp AMPS       &mt LCMD LPAR  &mt LALT LBKT  &mt LCTRL LBRC  &mt LSHFT STAR       &kp EQUAL      &mt RSHFT N4    &mt RCTRL N5    &mt RALT N6     &mt RCMD APOS
         &kp CARET      &kp RPAR       &kp RBKT       &kp RBRC        &kp GRAVE            &kp N0         &kp N1          &kp N2          &kp N3          &kp BACKSLASH
-                                                     &kc TAB         &kc ESCAPE           &kc MINUS      &kc ENTER
+                                                     &kp TAB         &kc ESCAPE           &kp MINUS      &kp ENTER
 	  	>;
 		};
 
@@ -40,7 +40,7 @@
         &bt BT_CLR     &reset         &bootloader    &kp ESCAPE      &kp ESCAPE           &kp ESCAPE     &kp ESCAPE      &bootloader     &reset          &bt BT_CLR
         &kp ESCAPE     &kp LCMD       &kp LALT       &kp LCTRL       &kp LSHFT            &kp ESCAPE     &kp RSHFT       &kp RCTRL       &kp RALT        &kp RCMD
         &kp ESCAPE     &kp ESCAPE     &kp ESCAPE     &kp ESCAPE      &kp ESCAPE           &kp ESCAPE     &kp ESCAPE      &kp ESCAPE      &kp ESCAPE      &kp ESCAPE
-                                                     &kc ESCAPE      &kc ESCAPE           &kc ESCAPE     &kc ESCAPE
+                                                     &kp UP          &kp DOWN             &kp LEFT       &kp RIGHT
 		  >;
 		};
 	};
