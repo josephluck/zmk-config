@@ -9,8 +9,12 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-  //  flavor = "tap-preferred";
-  //  tapping_term_ms = <200>;
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
+};
+
+&sl {
+    release-after-ms = <2000>;
 };
 
 / {
@@ -20,16 +24,16 @@
     default_layer {
 		  bindings = <
         &kp Q          &kp W          &kp E          &kp R          &kp T                 &kp Y          &kp U          &kp I          &kp O          &kp P 
-        &kp A          &mt LCMD S     &mt LALT D     &mt LCTRL F    &mt LSHFT G           &kp H          &mt RSHFT J    &mt RCTRL K    &mt RALT L     &mt RCMD SCLN
+        &mt LCMD A     &mt LALT S     &mt LCTRL D    &mt LSHFT F    &kp G                 &kp H          &mt RSHFT J    &mt RCTRL K    &mt RALT L     &mt RCMD SCLN
         &kp Z          &kp X          &kp C          &kp V          &kp B                 &kp N          &kp M          &kp CMMA       &kp DOT        &kp SLASH
-                                                     &lt 2 SPACE    &mo 1                 &mo 1          &lt 2 BSPC
+                                                     &lt 2 SPACE    &sl 1                 &sl 1          &lt 2 BSPC
 		  >;
 		};
 
     symbols_layer {
 		  bindings = <
         &kp EXCL       &kp AT         &kp HASH       &kp DLLR        &kp PRCNT            &kp HASH       &kp N7          &kp N8          &kp N9          &kp P 
-        &kp AMPS       &mt LCMD LPAR  &mt LALT LBKT  &mt LCTRL LBRC  &mt LSHFT STAR       &kp EQUAL      &mt RSHFT N4    &mt RCTRL N5    &mt RALT N6     &mt RCMD APOS
+        &mt LCMD AMPS  &mt LALT LPAR  &mt LCTRL LBKT &mt LSHFT LBRC  &kp STAR             &kp EQUAL      &mt RSHFT N4    &mt RCTRL N5    &mt RALT N6     &mt RCMD APOS
         &kp CARET      &kp RPAR       &kp RBKT       &kp RBRC        &kp GRAVE            &kp N0         &kp N1          &kp N2          &kp N3          &kp BACKSLASH
                                                      &kp TAB         &kp ESCAPE           &kp MINUS      &kp ENTER
 	  	>;
