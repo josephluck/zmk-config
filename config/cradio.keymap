@@ -42,7 +42,7 @@
 		navigation_layer {
 		  bindings = <
         &bt BT_CLR     &reset         &bootloader    &kp ESCAPE      &kp ESCAPE           &kp ESCAPE     &kp ESCAPE      &bootloader     &reset          &bt BT_CLR
-        &kp ESCAPE     &kp LCMD       &kp LALT       &kp LCTRL       &kp LSHFT            &kp ESCAPE     &kp RSHFT       &kp RCTRL       &kp RALT        &kp RCMD
+        &kp LCMD       &kp LALT       &kp LCTRL      &kp LSHFT       &kp ESCAPE           &kp ESCAPE     &kp RSHFT       &kp RCTRL       &kp RALT        &kp RCMD
         &kp ESCAPE     &kp ESCAPE     &kp ESCAPE     &kp ESCAPE      &kp ESCAPE           &kp ESCAPE     &kp ESCAPE      &kp ESCAPE      &kp ESCAPE      &kp ESCAPE
                                                      &kp UP          &kp DOWN             &kp LEFT       &kp RIGHT
 		  >;
