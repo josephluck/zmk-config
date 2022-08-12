@@ -78,7 +78,7 @@ This layer also contains the ZMK reset / bluetooth configuration keys, which are
 
 ## Building one
 
-If you're not comfortable with a soldering iron, I'd highly recommend buying a pre-built keyboard from (Cuddly Keyboards)[https://www.cuddlykeyboards.com/] but note that this will not be wireless.
+If you're not comfortable with a soldering iron, I'd highly recommend buying a pre-built keyboard from [Cuddly Keyboards](https://www.cuddlykeyboards.com/) but note that this will not be wireless.
 
 If you're happy to buy components and solder them together then read on!
 
