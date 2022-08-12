@@ -44,12 +44,34 @@ I'm a software engineer, which means I use my keyboard for very long periods, an
 
 ## Keymap
 
+Keymaps are very personal things, but it's kinda fun to document my thought process. If you're embarking on your own crazy keyboard journey, I'd recommend experimenting with keymaps to find out what works well for you.
+
 (note this keymap was created in QMK configurator, however the keymap is actually implemented using ZMK)
 
-![Keymap](https://github.com/josephluck/zmk-config/blob/master/keymap.png?raw=true)
+#### Features
 
 - Two main layers, QWERTY and symbols
 - Navigation layer for arrow keys
 - Space and backspace on thumbs
 - One-shot thumb key to access symbols layer
 - Home-row mods for modifiers
+
+#### Layer 0 (letters)
+
+This layer is the main letters and common symbols layer. It also contains all the modifiers on the "home row" which is the four keys that your fingers naturally rest on. These modifiers are accessed by holding down the relevant key, and pressing the second key using the opposite hand (this is why the modifiers are mirrored on each side).
+
+This layer also contains the space and backspace keys on the thumbs natural position. When either of these keys are held down, it activates the 2nd layer (see below) which contains the arrow keys. The secondary thumb key is a one-shot key to access the symbols layer. One-shot means that when activated, the symbols layer will be active until the next keypress, upon which the layer is deactivated and the letters layer is returned to. This means that to use a symbol, it's two keypresses rather than holding a modifier and pressing a letter/number.
+
+![Keymap](https://github.com/josephluck/zmk-config/blob/master/layer-1.png?raw=true)
+
+#### Layer 1 (symbols)
+
+This layer contains all the symbols I need as a software engineer. It also contains the enter key on one of the thumbs. This might seem strange, but you don't actually type enter very often. It's a wonder why the enter key is so large on regular keyboards...
+
+![Keymap](https://github.com/josephluck/zmk-config/blob/master/layer-2.png?raw=true)
+
+#### Layer 2 (navigation)
+
+This layer contains the arrow keys and is accessed by holding down one of the thumb keys. I use arrow key combos (i.e. navigate to the end of the line with `cmd+right`) and this keyboard layout fully supports any arrow combo by mirroring the modifier keys on all layers in the keymap.
+
+This layer also contains the ZMK reset / bluetooth configuration keys, which are not captured in the keymap above.
