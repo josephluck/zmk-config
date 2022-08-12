@@ -75,3 +75,31 @@ This layer contains all the symbols I need as a software engineer. It also conta
 This layer contains the arrow keys and is accessed by holding down one of the thumb keys. I use arrow key combos (i.e. navigate to the end of the line with `cmd+right`) and this keyboard layout fully supports any arrow combo by mirroring the modifier keys on all layers in the keymap.
 
 This layer also contains the ZMK reset / bluetooth configuration keys, which are not captured in the keymap above.
+
+## Building one
+
+If you're not comfortable with a soldering iron, I'd highly recommend buying a pre-built keyboard from (Cuddly Keyboards)[https://www.cuddlykeyboards.com/] but note that this will not be wireless.
+
+If you're happy to buy components and solder them together then read on!
+
+#### What you'll need
+
+LOTS and LOTS of research. I would highly recommend that you learn as much as you can about the hardware and components you'll be working with before you begin.
+
+- **2x Ferris Sweep PCBs** - your best bet is to search Google / Ebay / Etsy etc for folks selling them. Or, you can have a PCB fabricator make them for you. This is less complicated than it sounds. Download the `gerber` files from [GitHub](https://github.com/davidphilipbarr/Sweep) and upload them to a PCB fabricator like [JLCPCB](https://jlcpcb.com/).
+- **2x Nice!Nano microcontrollers** - this is the little bluetooth chip that will hold the firmware for the keyboard and send keystrokes to the computer. You can get these [here](https://splitkb.com/products/nice-nano?_pos=1&_sid=b259f9e19&_ss=r).
+- **2x Micro controller sockets** - these will connect the microcontroller to the PCB, leaving room for batteries underneath. You can get them [here](https://splitkb.com/products/mill-max-low-profile-sockets?variant=31945995845709). Note that these sockets are made in such a way that you can pop the microcontroller off without having to de-solder - neat right?!
+- **2x LiPro batteries** - You'll need a specific battery for this build. It must be a `301230` battery. You can pick them up [here](https://www.amazon.co.uk/li-polymer-Rechargeable-bluetooth-earphone-recording/dp/B08N12Z66G) but you might find them cheaper elsewhere.
+- **34x kailh low-profile key switches** - there are many to choose from, but I'd recommend Kailh Pink switches which you can get [here](https://splitkb.com/collections/switches-and-keycaps/products/kailh-low-profile-choc-switches).
+- **34x kailh keycaps** - again, there are many to choose from, but I'd recommend going for MBK blank keycaps which you can get [here](https://splitkb.com/collections/switches-and-keycaps/products/blank-mbk-choc-low-profile-keycaps). Note you'll need `1u` keycaps for this keyboard.
+- **Soldering iron** - I'd recommend picking up a half-decent iron with a thin tip.
+
+Optionally you can tape mod and lubricate your switches, but you can find out how to do that yourself.
+
+#### Building
+
+Once you've got everything, it's time to start soldering!
+
+It's best to follow [this build guide](https://www.youtube.com/watch?v=fBPu7AyDtkM) which will do a much more thorough job (and will be much more frequently updated than this will!)
+
+However, this build guide is for Pro Micro / Elite C microcontrollers, not Nice!Nano wireless controllers. So... you'll want to follow all the instructions above, but also install batteries using [this guide too](https://www.youtube.com/watch?v=zoCKINGh2DQ)!
