@@ -22,7 +22,7 @@ Modifier keys (shift, control, alt, command etc) are usually towards the edges o
 
 #### Key switches
 
-Laptop and other more traditional keyboards use membrane or similar key switches which are optimized for cost and low-profile rather than comfort. These switches are typically very low-profile, meaning that they do not have much cushioning as you press down. When the switch is activated, it feels more like a button than a smooth motion, which means that your finger pushes all the way to the bottom of the switch (until it can go no further) which might not seem that bad, but it tends to lead to smacking the keys on the keyboard rather than gently pushing them down. It can cause strain on the fingers.
+Laptop and other more traditional keyboards use membrane or similar key switches which are optimized for cost and low-profile rather than comfort. These switches are typically very low-profile, meaning that they do not have much cushioning as you press down. When the switch is activated, it feels more like a button than a smooth motion, which means that your finger pushes all the way to the bottom of the switch (this is called "bottoming out") which might not seem that bad, but it tends to lead to smacking the keys on the keyboard rather than gently pushing them down. It can cause strain on the fingers.
 
 #### Number of keys
 
@@ -44,9 +44,9 @@ I'm a software engineer, which means I use my keyboard for very long periods, an
 
 ## Keymap
 
-Keymaps are very personal things, but it's kinda fun to document my thought process. If you're embarking on your own crazy keyboard journey, I'd recommend experimenting with keymaps to find out what works well for you.
+Keymaps are very personal things, but it's kinda fun to document my thought process. If you're embarking on your own crazy keyboard journey, I'd recommend experimenting with different key maps to find out what works well for you.
 
-(note this keymap was created in QMK configurator, however the keymap is actually implemented using ZMK)
+(note these keymap images are created in [QMK configurator](https://config.qmk.fm/#/ferris/sweep/LAYOUT_split_3x5_2) (see the `.json` at the root of the repo for the config), however the keymap is actually implemented using ZMK)
 
 #### Features
 
@@ -75,6 +75,8 @@ This layer contains all the symbols I need as a software engineer. It also conta
 This layer contains the arrow keys and is accessed by holding down one of the thumb keys. I use arrow key combos (i.e. navigate to the end of the line with `cmd+right`) and this keyboard layout fully supports any arrow combo by mirroring the modifier keys on all layers in the keymap.
 
 This layer also contains the ZMK reset / bluetooth configuration keys, which are not captured in the keymap above.
+
+![Keymap](https://github.com/josephluck/zmk-config/blob/master/layer-3.png?raw=true)
 
 ## Building one
 
